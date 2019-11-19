@@ -12,12 +12,12 @@ function mapLike(src,fun) {
  
  
 function reduceLike(src,fun,startPoint=0){
-if(typeof src.reduce(fun,startPoint)=="number"&&startPoint>0){
-  return src.reduce(fun,startPoint);
+if(typeof src.reduceLike(fun,startPoint)=="number"&&startPoint>0){
+  return src.reduceLike(fun,startPoint);
   
 }
 else{
-  return src.reduce(fun);
+  return src.reduceLike(fun);
 }
 }
 
