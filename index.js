@@ -12,7 +12,9 @@ function map(src,fun) {
  
  
 function reduce(src,fun,startPoint=0){
-
+if(typeof src.reduce()){
+  
+}
 
 }
 // array= [1,2,3]
