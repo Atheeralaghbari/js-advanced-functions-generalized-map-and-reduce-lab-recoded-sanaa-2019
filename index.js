@@ -12,9 +12,14 @@ function map(src,fun) {
  
  
 function reduce(src,fun,startPoint=0){
-if(typeof src.reduce()){
+if(typeof src.reduce(fun,startPoint)=="number"&&startPoint>0){
+  return src.reduce(fun,startPoint);
   
 }
+else{
+  return src.reduce(fun);
+}
+
 
 }
 // array= [1,2,3]
