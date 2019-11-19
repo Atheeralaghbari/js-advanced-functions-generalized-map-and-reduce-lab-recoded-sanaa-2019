@@ -12,12 +12,12 @@ function map(src,fun) {
  
  
 function reduce(src,fun,startPoint=0){
-if(typeof src.reduceLike(fun,startPoint)=="number"&&startPoint>0){
-  return src.reduceLike(fun,startPoint);
+if(typeof src.reduce(fun,startPoint)=="number"&&startPoint>0){
+  return src.reduce(fun,startPoint);
   
 }
 else{
-  return src.reduceLike(fun);
+  return src.reduce(fun);
 }
 }
 
